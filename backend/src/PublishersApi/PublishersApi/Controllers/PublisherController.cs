@@ -18,7 +18,11 @@ namespace Api.Controllers
             this.publisher = publisher;
         }
 
-
+        /// <summary>
+        /// Return single publisher filtered by identifier
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<Result> Get(string id) 
         {
             try
@@ -36,6 +40,10 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Return list of publisher
+        /// </summary>
+        /// <returns></returns>
         public async Task<Result> GetAll() {
             try
             {
